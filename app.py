@@ -36,8 +36,6 @@ Samples_otu = Base.classes.otu
 
 session = Session(engine)
 
-# sample_names = Samples.__table__.columns.keys()
-# del sample_names[0]
 
 ##############################################################################
 # USING SQLALCHEMY TO FIND THE sample otu
