@@ -107,7 +107,7 @@
         console.log(objectValues);
 
         var objectvalues = [objectKeys, objectValues];
-
+//METADATA CHART
         var data_3 = [{
           type: 'table',
           header: {values: ["Metadata Info"], 
@@ -146,7 +146,7 @@
         const colors = [];
         var bubbleText = [];
         var bubbleColor = [];
-
+//PIE CHART
         data = [{
             values: top10_sample_values,
             labels: top10_sample_otu_id,
@@ -158,7 +158,7 @@
 
         Plotly.newPlot("plot-1", data, layout);
 
-        //BUBBLE PLOTTTING
+//BUBBLE PLOTTTING
         for (var i=0; i<top40_sample_otu_id.length; i++) {
           xAxis.push(top40_sample_otu_id[i]);
           yAxis.push(top40_sample_values[i]);
@@ -182,7 +182,9 @@
           },
         }];
         const layout_2 = {
-          title: "Randomly Generated Data",
+          xaxis: {title: "OTU_IDs Number", size: 22},
+          yaxis: {title: "Sample Count", size: 22},
+          title: "Sample Generated Data",
           showlegend: false,
           height: 1000,
           width: 1000
